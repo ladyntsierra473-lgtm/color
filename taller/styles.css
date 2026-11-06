@@ -1,0 +1,155 @@
+:root{
+    --color-dominante: #174a6e;
+    --color-secundario: #2e7d5b;
+    --color-acento: #f2b544;
+    --color-fondo: #f7f8fa;
+    --color-texto: #263238;
+    --color-blanco: #ffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+.contenedor{
+    width: min(100%-40px, 100px);
+    margin: 0 auto;
+}
+
+.encabezado{
+    background-color: var(--color-dominante);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 28px 0;
+}
+
+.encabezado h1{
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.bienvenida h2{
+    color: var(--color-dominante);
+    font-size: 2rem;
+}
+
+.bienvenida p{
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+.boton{
+    display: inline-block;
+    background-color: var(--color-acento);
+    color: var(--color-texto);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 7px;
+}
+
+.boton:hover{
+    filter: brightness(0.95);
+}
+
+.curso{
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    padding: 28px;
+    border-radius: 12px;
+    margin: 10px auto 45px;
+    max-width: 650px ;
+    text-align: center;
+}
+
+.curso h2{
+    margin-top: 10px ;
+}
+
+.etiqueta {
+    display: inline-block;
+    background-color: var(--color-acento);
+    color: var(--color-texto);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.enlace{
+    color: var(--color-blanco);
+    font-weight: bold;
+}
+
+.beneficios{
+    padding: 15px 0 55px;
+    text-align: center;
+}
+
+.beneficios h2{
+    color: var(--color-dominante);
+}
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.tarjeta{
+    background-color: var(--color-blanco);
+    border: 1px solid #DCE2E7;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.tarjeta h3{
+    color: var(--color-secundario);
+    margin-top: 0;
+}
+
+.justificacion {
+    background-color: var(--color-blanco);
+    border-left: 6px solid var(--color-acento);
+    padding: 25px;
+    margin: 20px auto 45px;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.justificacion h2 {
+    color: var(--color-dominante);
+    margin-top: 0;
+}
+
+.justificacion li {
+    margin-bottom: 10px;
+}
+.footer p{
+    margin: 0;
+}
+
+@media (max-width: 650px) {
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .bienvenida h2 {
+        font-size: 1.6rem;
+    }
+}
+
